@@ -12,15 +12,24 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Baloo+Bhaijaan+2:wght@400;500&family=Cormorant+Garamond:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/6c02173916.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
       <form class="signUpForm">
-        <h1>Sign Up</h1>
-        <p>It's free and only takes a minute</p>
+        <div class="formHeadings">
+          <h1>Sign Up</h1>
+          <p>It's free and only takes a minute</p>
+        </div>
         <div class="formText">
           <label for="first_name">First name</label>
-          <input type="text" id="first_name" />
+          <div class="iconContainer">
+            <i class="fas fa-caret-square-down"></i>
+            <input type="text" id="first_name" />
+          </div>
 
           <label for="last_name">Last name</label>
           <input type="text" id="last_name" />
@@ -29,10 +38,16 @@
           <input type="email" id="email" />
 
           <label for="password">Password</label>
-          <input type="password" id="password" />
+          <div class="iconContainer">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" />
+          </div>
 
           <label for="confirm_password">Confirm Password</label>
-          <input type="password" id="confirm_password" />
+          <div class="iconContainer">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="confirm_password" />
+          </div>
           <button type="submit">SIGN UP</button>
           <footer>
             By clicking the Sign up button, you agree to out
