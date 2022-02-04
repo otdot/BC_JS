@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500&family=Cormorant+Garamond:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Background color styler</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6c02173916.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <form class="form">
+        <div>
+          <h2>Choose your colors</h2>
+          <input name="color_one" id="color_one" type="color" value="#FF0000" />
+          <input name="color_two" id="color_two" type="color" value="#FFF700" />
+        </div>
+        <div class="radio">
+          <h2>Choose a direction</h2>
+          <label for="deg45">
+            <input name="direction" type="radio" id="deg45" value="45deg" />
+            <i id="deg45" class="fas fa-arrow-right fa-2x"></i
+          ></label>
+          <label for="deg90">
+            <input name="direction" type="radio" id="deg90" value="90deg" />
+            <i class="fas fa-arrow-right fa-2x"></i
+          ></label>
+          <label for="deg135">
+            <input name="direction" type="radio" id="deg135" value="135deg" />
+            <i id="deg135" class="fas fa-arrow-right fa-2x fa-rotate-270"></i
+          ></label>
+          <label for="deg180"
+            ><input
+              name="direction"
+              type="radio"
+              id="deg180"
+              value="180deg" /><i class="fas fa-arrow-down fa-2x"></i
+          ></label>
+          <label for="deg225">
+            <input name="direction" type="radio" id="deg225" value="225deg" />
+            <i id="deg225" class="fas fa-arrow-right fa-2x"></i
+          ></label>
+          <label for="deg270"
+            ><input
+              name="direction"
+              type="radio"
+              id="deg270"
+              value="270deg" /><i class="fas fa-arrow-left fa-2x"></i
+          ></label>
+          <label for="315deg">
+            <input name="direction" type="radio" id="315deg" value="315deg" />
+            <i id="deg315" class="fas fa-arrow-right fa-2x"></i
+          ></label>
+          <label for="deg0"
+            ><input
+              name="direction"
+              type="radio"
+              id="deg0"
+              value="0deg"
+              checked /><i class="fas fa-arrow-up fa-2x"></i
+          ></label>
+        </div>
+        <div>
+          <h2>Generate your gradient</h2>
+        </div>
+        <button id="button">Generate</button>
+        <p id="stylegen">linear-gradient(90deg, #FF0000, #FFF700)</p>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

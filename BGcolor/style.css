@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  text-align: center;
+  background-image: linear-gradient(#ff0000, #fff700);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.form {
+  border: white outset 1px;
+  background-color: white;
+  height: 1000px;
+  width: 300px;
+}
+
+/* button */
+
+#button {
+  background-image: linear-gradient(#ff0000, #fff700);
+  height: 30px;
+  width: 80px;
+  margin: 20px auto;
+}
+
+/* radiobuttons  */
+
+.radio {
+  display: inline-block;
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input[name="direction"] {
+  opacity: 0;
+}
+
+input[name="direction"] + i {
+  margin: 10px;
+}
+
+input[name="direction"] + #deg45 {
+  display: inline-block;
+  transform: rotate(315deg);
+}
+
+input[name="direction"] + #deg135 {
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+input[name="direction"] + #deg225 {
+  display: inline-block;
+  transform: rotate(135deg);
+}
+
+input[name="direction"] + #deg315 {
+  display: inline-block;
+  transform: rotate(225deg);
+}
+
+input[name="direction"]:checked + i {
+  color: blue;
+}
