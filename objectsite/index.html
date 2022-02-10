@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <form class="searchform">
+            <label for="searchInput">Search</label>
+            <input id="searchInput" placeholder="Search car" type="text" />
+            <input id="searchCars" type="submit" value="Search" />
+          </form>
+          <p id="searchResults">Hello</p>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form class="carform">
+        <label for="licence_plate">licence_place</label>
+        <input id="licence_plate" type="text" />
+        <label for="maker">car maker</label>
+        <input id="maker" type="text" />
+        <label for="model">car model</label>
+        <input id="model" type="text" />
+        <label for="owner">car owner</label>
+        <input id="owner" type="text" />
+        <label for="price">car price</label>
+        <input id="price" type="text" />
+        <label for="color">car color</label>
+        <input id="color" type="text" />
+        <input type="submit" id="addcar" value="add car" />
+        <input type="reset" id="reset" value="reset" />
+      </form>
+      <section>
+        <h1>Car table</h1>
+        <div class="results">
+          <table class="tableData">
+            <tr>
+              <th>licence_place</th>
+              <th>maker</th>
+              <th>model</th>
+              <th>owner</th>
+              <th>price</th>
+              <th>color</th>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+main {
+  display: flex;
+}
+
+form input {
+  display: block;
+  flex: 1;
+}
+
+table {
+  flex: 1;
+}
