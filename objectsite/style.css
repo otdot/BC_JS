@@ -1,3 +1,13 @@
+header {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header input {
+}
+
 main {
   display: flex;
 }
