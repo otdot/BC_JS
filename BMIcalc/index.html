@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>BMI calculator</h1>
+    <p>
+      Make a program that calculates body mass index. The BMI is defined as the
+      body mass divided by the square of the body height, and is universally
+      expressed in units of kg/m2, resulting from mass in kilograms and height
+      in metres. Based on result display correct range: BMI Status Below 18.5
+      Underweight 18.5 - 24.9 Normal or Healthy Weight 25.0 - 29.9 Pre-obesity
+      30.0 and Obesity
+    </p>
+    <div>
+      <div>
+        <label for="weight">Weigth: </label>
+        <input id="weight" type="number" placeholder="Weight in kg" />
+      </div>
+      <div>
+        <label for="height">Height: </label>
+        <input id="height" type="number" placeholder="Height in cm" />
+      </div>
+      <input type="Submit" onclick="calculate()" class="button" />
+    </div>
+
+    <p id="bodymass"></p>
+    <script src="app.js"></script>
+  </body>
+</html>

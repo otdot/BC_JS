@@ -1,0 +1,19 @@
+body {
+  background-image: linear-gradient(yellow, green, red);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+label {
+  display: inline-block;
+  min-width: 100px;
+  margin: 10px 0;
+}
+button {
+  border: none;
+  border-radius: 3px;
+  padding: 2px;
+  height: 2em;
+  background-image: repeating-radial-gradient(yellow, green, red);
+}
